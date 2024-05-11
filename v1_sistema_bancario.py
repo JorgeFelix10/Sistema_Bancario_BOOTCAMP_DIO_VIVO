@@ -37,7 +37,7 @@ while True:
 
         valor_saque = float(input("Informe o valor que deseja sacar:"))
 
-        if valor_saque <= saldo:
+        if valor_saque <= saldo and valor_saque > 0:
 
             if valor_saque <= LIMITE_SAQUE and quantidade_saques < 3:
 
@@ -52,7 +52,7 @@ while True:
                 sleep(1.5)
 
         else:
-            print("Saldo insuficiente!")
+            print("Saldo insuficiente ou valor inválido!")
             print("Voltando ao MENU principal ...")
             sleep(1.5)
 
