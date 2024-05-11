@@ -61,10 +61,12 @@ while True:
         print("========== EXTRATO ==========\n")
         print(f"{extrato}")
         print(f"Seu saldo atual é R$: {saldo:.2f}")
+        sleep(1.5)
 
     elif operaçao_escolhida == 4:
 
         print("Saindo da conta")
+        sleep(1.5)
         break
 
     else:
